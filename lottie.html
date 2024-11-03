@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lottie動畫介紹</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- 引入 Lottie.js 庫 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">JS套件介紹
+                <img src="https://i0.wp.com/tw.alphacamp.co/wp-content/uploads/2022/12/60e827295bbd949f8a41a2ec_5d5b7df8da745a6fcc9a7fe1_5b9110e86e11f7d979b0dc36_javascript.png?fit=785%2C340&ssl=1"
+                    alt="LOGO" width="60" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="aos.html">AOS 動畫</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="text-to-speech.html">文字轉語音</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lottie.html">Lottie 動畫</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chart.html">Chart.js 圖表</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lazy-loading.html">圖片懶加載</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Swiper.html">滑動圖片畫廊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Leaflet.html">地圖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FullCalendar.html">日曆選擇器</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Toast Notifications.html">通知提示</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jQuery Datatables.html">表格</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-3">
+        <h2>動畫展示</h2>
+        <a href="https://airbnb.io/lottie/#/" target="_blank">Lottie.js 官網</a>
+        <br>
+        <a href="https://lottiefiles.com/featured-free-animations" target="_blank">lottie動畫文件下載</a>
+        <p>這是一個簡單的動畫展示，使用 Lottie.js 加載 JSON 格式動畫。</p>
+        <hr>
+        
+        <h2>範例程式碼</h2>
+        <pre>
+            <code>
+const animation = lottie.loadAnimation({
+    container: document.getElementById('lottieAnimation'), // 動畫容器
+    renderer: 'svg', // 渲染器類型 (svg, canvas, html)
+    loop: true, // 是否循環播放
+    autoplay: true, // 是否自動播放
+    path: 'Animation - 1730289102299.json' // JSON 動畫文件的路徑
+});
+            </code>
+        </pre>
+        <hr>
+
+        <h2>效果展示</h2>
+        <!-- 動畫容器 -->
+        <div id="lottieAnimation" style="width: 100%; max-width: 500px; margin: 0 auto;"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // 使用 Lottie.js 加載動畫
+        const animation = lottie.loadAnimation({
+            container: document.getElementById('lottieAnimation'), // 動畫容器
+            renderer: 'svg', // 渲染器類型 (svg, canvas, html)
+            loop: true, // 是否循環播放
+            autoplay: true, // 是否自動播放
+            path: 'Animation - 1730289102299.json' // JSON 動畫文件的路徑
+        });
+    </script>
+</body>
+
+</html>
